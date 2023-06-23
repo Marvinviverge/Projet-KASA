@@ -1,0 +1,14 @@
+.logement {
+    background-color: #f6f6f6;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 50px;
+    border-radius: 25px;
+    padding: 56px 50px;
+}
+
+.logement a {
+    width: 100%;
+    margin: 0;
+}

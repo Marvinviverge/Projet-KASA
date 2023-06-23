@@ -1,0 +1,36 @@
+.logement li {
+    position: relative;
+    height: 340px;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+}
+
+.logement h1 {
+    position: absolute;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px;
+    overflow-wrap: normal;
+    width: 300px;
+}
+
+.logement img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.logement-sombre {
+    background: linear-gradient(to top, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

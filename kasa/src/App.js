@@ -1,14 +1,17 @@
-import logo from '@/logo.svg';
-import '@/App.css';
-import Home from '@/pages/Home';
+// import logo from '@/logo.svg';
+import '@/Assets/Css/App.css';
 
-function App() {
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import PublicRouter from '@/pages/Public/PublicRouter';
+
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Home />
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/*" element={<PublicRouter />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

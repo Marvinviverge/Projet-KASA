@@ -1,0 +1,15 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.aboutDropdown {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
