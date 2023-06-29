@@ -32,6 +32,10 @@
     z-index: -1;
 }
 
+.dropdownDescription li {
+    list-style-type: none;
+}
+
 .dropdownArrow {
     margin-right: 10px;
     transform: rotate(180deg)
@@ -39,4 +43,8 @@
 
 .dropdownArrow2 {
     margin-right: 10px;
+}
+
+.fs18 {
+    font-size: 18px !important;
 }

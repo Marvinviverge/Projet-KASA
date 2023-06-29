@@ -14,13 +14,13 @@ const About = () => {
         <section className='about'>
             <Hero image={HeroImg} title="" />
 
-            <ul className='aboutDropdown'>
+            <div className='aboutDropdown'>
                 {
                     AboutService.GetAbout().map((about) =>
-                        <Dropdown key={about.title} viewother={false} title={about.title} description={about.description} />
+                        <Dropdown key={about.title} title={about.title} description={about.description} otherview='false' />
                     )
                 }
-            </ul>
+            </div>
         </section>
 
     );
