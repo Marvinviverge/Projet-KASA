@@ -6,16 +6,12 @@ main {
     margin: 70px 0;
 }
 
-@media only screen and (max-width : 1024px) {
+@media only screen and (max-width : 1024px) {}
+
+@media only screen and (max-width : 767px) {
     main {
         padding: 0 20px;
-    }
-
-}
-
-@media only screen and (max-width : 640px) {
-    main {
-        padding: 0 20px;
+        margin-top: 16px;
     }
 
 }

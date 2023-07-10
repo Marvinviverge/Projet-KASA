@@ -42,27 +42,29 @@ const Apartment = () => {
     if (Waiting) return (<h2>Chargement...</h2>)
     return (
         <section className='Apartment'>
-            <Slide pictures={ApartmentSelected.pictures} cover={ApartmentSelected.cover} />
-            <div className='informations'>
-                <div className='location'>
-                    <h2>{ApartmentSelected.title}</h2>
-                    <p>{ApartmentSelected.location}</p>
+            <Slide pictures={ApartmentSelected.pictures} />
+            <div className='globalInfos'>
+                <div className='informations'>
+                    <div className='location'>
+                        <h2>{ApartmentSelected.title}</h2>
+                        <p>{ApartmentSelected.location}</p>
+                    </div>
+                    <ul className='tags'>
+                        {
+                            ApartmentSelected.tags.map((tag, index) =>
+                                <Tag key={index} tagname={tag} />
+                            )
+                        }
+                    </ul>
                 </div>
-                <div className='host'>
-                    <p>{ApartmentSelected.host.name}</p>
-                    <img src={ApartmentSelected.host.picture} alt='Profil host' />
-                </div>
-            </div>
-            <div className='tagrating'>
-                <ul className='tags'>
-                    {
-                        ApartmentSelected.tags.map((tag, index) =>
-                            <Tag key={index} tagname={tag} />
-                        )
-                    }
-                </ul>
-                <div className='rating'>
-                    <Star rating={ApartmentSelected.rating} />
+                <div className='hostrating'>
+                    <div className='host'>
+                        <p>{ApartmentSelected.host.name}</p>
+                        <img src={ApartmentSelected.host.picture} alt='Profil host' />
+                    </div>
+                    <div className='rating'>
+                        <Star rating={ApartmentSelected.rating} />
+                    </div>
                 </div>
             </div>
             <div className='dropdownInformations'>

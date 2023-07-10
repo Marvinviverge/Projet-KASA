@@ -1,5 +1,6 @@
 .dropdown {
-    width: 1023px;
+    width: 100%;
+    max-width: 1023px;
 }
 
 .dropdownheader {

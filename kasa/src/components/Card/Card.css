@@ -6,7 +6,7 @@
     align-items: flex-end;
 }
 
-.logement h1 {
+.logement h2 {
     position: absolute;
     text-decoration: none;
     color: white;
@@ -14,7 +14,7 @@
     font-size: 18px;
     padding: 10px;
     overflow-wrap: normal;
-    width: 300px;
+    max-width: 300px;
 }
 
 .logement img {

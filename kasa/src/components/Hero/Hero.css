@@ -42,21 +42,28 @@
     .hero h1 {
         font-size: 32px;
         left: 15px;
-        text-align: start;
-        transform: translateY(-50%);
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 767px) {
 
     .hero {
         height: 111px;
+        border-radius: 10px;
+    }
+
+    .hero-img {
+        border-radius: 10px;
+    }
+
+    .hero-sombre {
+        border-radius: 10px;
     }
 
     .hero h1 {
         font-size: 24px;
         left: 15px;
         text-align: start;
-        transform: translateY(-50%);
+        width: 190px;
     }
 }

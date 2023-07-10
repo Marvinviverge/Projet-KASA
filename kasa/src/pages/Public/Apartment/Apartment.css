@@ -9,6 +9,7 @@
     width: 100%;
     border-radius: 25px;
     height: 415px;
+    position: relative;
 }
 
 .carroussel img {
@@ -18,18 +19,12 @@
     object-fit: cover;
 }
 
-.informations {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .location {
     color: #FF6060;
 }
 
 .location h2 {
-    margin: 30px 0px 0px 0px;
+    margin: 0px;
     font-size: 36px;
     font-weight: 500;
 }
@@ -55,10 +50,10 @@
     object-fit: cover;
 }
 
-.tagrating {
+.hostrating {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 25px;
+    flex-direction: column;
 }
 
 .tags {
@@ -68,9 +63,36 @@
     padding: 0;
 }
 
+.globalInfos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .dropdownInformations {
     display: flex;
     justify-content: space-between;
     gap: 50px;
     width: 100%;
+}
+
+@media only screen and (max-width : 767px) {
+    .dropdownInformations {
+        flex-direction: column;
+    }
+
+    .globalInfos {
+        flex-direction: column;
+    }
+
+    .hostrating {
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .host {
+        gap: 10px;
+    }
 }

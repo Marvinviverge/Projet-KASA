@@ -2,23 +2,42 @@
     position: absolute;
     width: 45px !important;
     height: 80px !important;
-    top: 40%;
-    left: 13%;
+    left: 15px;
 }
 
 .arrowCarrousselNext {
     position: absolute;
     width: 45px !important;
     height: 80px !important;
-    top: 40%;
-    right: 13%;
+    right: 15px;
 }
 
 .carrousselNumber {
     position: absolute;
-    left: 50%;
-    top: 58%;
     color: white;
     font-size: 24px;
     font-weight: 500;
+    bottom: 15px;
+    left: 50%;
+}
+
+.arrowCarroussel {
+    position: relative;
+    top: 40%;
+}
+
+@media only screen and (max-width : 767px) {
+
+    .arrowCarrousselPrev {
+        top: 33%;
+    }
+
+    .arrowCarrousselNext {
+        top: 33%;
+    }
+
+    .carrousselNumber {
+        left: 48%;
+    }
+
 }

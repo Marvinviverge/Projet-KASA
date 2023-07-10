@@ -6,7 +6,7 @@ const Card = (logement) => {
         <li>
             <img className="logement-img" src={logement.image} alt="logement" />
             <div className="logement-sombre"></div>
-            <h1>{logement.titre}</h1>
+            <h2>{logement.titre}</h2>
         </li>
     )
 

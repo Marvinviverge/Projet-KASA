@@ -12,3 +12,19 @@
     width: 100%;
     margin: 0;
 }
+
+@media screen and (max-width : 1024px) {
+    .logement {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .logement {
+        grid-template-columns: repeat(1, 1fr);
+        background-color: inherit;
+        gap: 20px;
+        padding: inherit;
+        margin-top: 22px;
+    }
+}
